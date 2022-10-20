@@ -59,21 +59,34 @@
         var $title;
         var $author;
         var $pages;
+
+        function __construct($aTitle, $aAuthor, $aPages){
+          $this->title = $aTitle;
+          $this->author = $aAuthor;
+          $this->pages = $aPages;
+        }
+
+        function bigBook() {
+          if($this->pages >=500){
+            return "true";
+          }
+          return "false";
+        }
       }
 
-      $book1 = new Book;
-      $book1->title = "Harry Potter";
-      $book1->author = "JK Rowling";
-      $book1->pages = 400;
-
-      $book2 = new Book;
-      $book2->title = "Lord Of The Rings";
-      $book2->author = "Tolkien";
-      $book2->pages = 700;
+      $book1 = new Book("Harry Potter", "JK Rowling", 400);
+      $book2 = new Book("Lord Of The Rings", "Tolkien", 700);
 
       echo $book1->title;
       echo $book2->author;
+      echo $book1->bigBook();
    ?>
+
+   <?php
+   class LibraryBook extends Book {
+     // inheritance
+   }
+    ?>
 
 <!-- Footer component -->
   <?php include "footer.html" ?>
