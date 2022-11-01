@@ -6,6 +6,18 @@
   </head>
   <body>
 
+    <nav>
+      <ul>
+        <li>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+
+        </li>
+      </ul>
+    </nav>
+
+    <h1>My Tasks</h1>
+
 
     <ul>
 
