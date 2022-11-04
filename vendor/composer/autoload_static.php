@@ -7,7 +7,11 @@ namespace Composer\Autoload;
 class ComposerStaticInitf88500dbbf822ad842d2af7cb3ab78b1
 {
     public static $classMap = array (
-        'App' => __DIR__ . '/../..' . '/core/App.php',
+        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
+        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/controllers/UsersController.php',
+        'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
+        'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
+        'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
         'Book' => __DIR__ . '/../..' . '/tutorial_site/site.php',
         'ComposerAutoloaderInitf88500dbbf822ad842d2af7cb3ab78b1' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
@@ -15,13 +19,9 @@ class ComposerStaticInitf88500dbbf822ad842d2af7cb3ab78b1
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'LibraryBook' => __DIR__ . '/../..' . '/tutorial_site/site.php',
-        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'Post' => __DIR__ . '/../..' . '/arrays/index.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
-        'Request' => __DIR__ . '/../..' . '/core/Request.php',
-        'Router' => __DIR__ . '/../..' . '/core/Router.php',
         'Task' => __DIR__ . '/../..' . '/tasks.php',
-        'UsersController' => __DIR__ . '/../..' . '/controllers/UsersController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

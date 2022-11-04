@@ -6,7 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App' => $baseDir . '/core/App.php',
+    'App\\Controllers\\PagesController' => $baseDir . '/app/controllers/PagesController.php',
+    'App\\Controllers\\UsersController' => $baseDir . '/app/controllers/UsersController.php',
+    'App\\Core\\App' => $baseDir . '/core/App.php',
+    'App\\Core\\Request' => $baseDir . '/core/Request.php',
+    'App\\Core\\Router' => $baseDir . '/core/Router.php',
     'Book' => $baseDir . '/tutorial_site/site.php',
     'ComposerAutoloaderInitf88500dbbf822ad842d2af7cb3ab78b1' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
@@ -14,11 +18,7 @@ return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Connection' => $baseDir . '/core/database/Connection.php',
     'LibraryBook' => $baseDir . '/tutorial_site/site.php',
-    'PagesController' => $baseDir . '/controllers/PagesController.php',
     'Post' => $baseDir . '/arrays/index.php',
     'QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
-    'Request' => $baseDir . '/core/Request.php',
-    'Router' => $baseDir . '/core/Router.php',
     'Task' => $baseDir . '/tasks.php',
-    'UsersController' => $baseDir . '/controllers/UsersController.php',
 );

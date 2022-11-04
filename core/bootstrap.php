@@ -1,5 +1,7 @@
 <?php
 
+use App\Core\App;
+
 App::bind('config', require 'config.php');
 
 // $config = App::get('config');
@@ -24,7 +26,7 @@ App::bind('database', new QueryBuilder(
 
       extract($data);
 
-      return require "views/{$name}.view.php";
+      return require "app/views/{$name}.view.php";
   }
 
   function redirect($path)
