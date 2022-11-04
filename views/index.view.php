@@ -24,17 +24,8 @@
 
     <!-- FORM SUBMISSION -->
 
-    <?php foreach ($users as $user) : ?>
+    <h1>Home Page</h1>
 
-      <li><?= $user->name; ?></li>
-
-    <?php endforeach; ?>
-
-    <h1>Submit Your Name</h1>
-
-    <form action="/names" method="POST">
-        <input type="text" name="name">
-        <button type="submit" name="button">Click here</button>
-    </form>
+    
 
     <?php require('partials/footer.php'); ?>
